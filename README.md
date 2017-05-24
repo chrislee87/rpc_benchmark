@@ -191,6 +191,7 @@ service Greeter {
 **Benchmark**
 
 1. gRPC-go, long connection
+
 clients|Latency(median)|Latency(mean)|Latency(P99)|Latency(max)|QPS|CPU
 -------------|-------------|-------------|-------------|-------------|-------------|-------------
 100|0|1ms|8ms|200ms|95k|2000%
@@ -199,6 +200,7 @@ clients|Latency(median)|Latency(mean)|Latency(P99)|Latency(max)|QPS|CPU
 10000|8ms|65ms|1.6s|30s|100k|2000%
 
 2. gRPC-go, short connection
+
 clients|Latency(median)|Latency(mean)|Latency(P99)|Latency(max)|QPS|CPU
 -------------|-------------|-------------|-------------|-------------|-------------|-------------
 10|1ms|1ms|4ms|41ms|6k|600%
@@ -206,6 +208,7 @@ clients|Latency(median)|Latency(mean)|Latency(P99)|Latency(max)|QPS|CPU
 100|4ms|6ms|1s|3s|13k|2700%
 
 3. thrift-go, long connection
+
 clients|Latency(median)|Latency(mean)|Latency(P99)|Latency(max)|QPS|CPU
 -------------|-------------|-------------|-------------|-------------|-------------|-------------
 100|0|1ms|4ms|40ms|100k|1200%
@@ -214,6 +217,7 @@ clients|Latency(median)|Latency(mean)|Latency(P99)|Latency(max)|QPS|CPU
 10000|13ms|73ms|1.7s|54s|90k|1200%
 
 4. thrift-go, short connection
+
 clients|Latency(median)|Latency(mean)|Latency(P99)|Latency(max)|QPS|CPU
 -------------|-------------|-------------|-------------|-------------|-------------|-------------
 10|0|0|2ms|27ms|12k|300%
