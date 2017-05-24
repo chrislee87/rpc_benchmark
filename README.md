@@ -1,4 +1,5 @@
 ## RPC Benchmark
+
 Benchmark for grpc-go and thrift-go
 
 **Machines**
@@ -189,6 +190,8 @@ service Greeter {
 ```
 
 **Benchmark**
+
+All RPCs are successful below.
 
 1. gRPC-go, long connection
 
