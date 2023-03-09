@@ -233,7 +233,7 @@ clients|Latency(median)|Latency(mean)|Latency(P99)|Latency(max)|QPS|CPU
 * For short connection, thrift(TCP) outperforms gRPC(HTTP2) in QPS/CPU/Lantency 
 * As a result of the work pattern(one goroutine for each connection), for short connection, the CPU usage increases obviously as connections increase, connection limitation is very important, in case of errors as bellow
   > grpc: addrConn.resetTransport failed to create client transport: connection error: desc = "transport: dial tcp: getsockopt: connection refused"
-* Latency for a small portion of connections can not be controlled, because GC of Go would stop the world, for real time applications with very strict latency requirements, use C/C++ or Rust instead of Go
+* Latency for a small portion of connections can not be controlled, because GC of Go would stop the world, for real time applications with very strict latency requirements, using C/C++ or Rust instead of Go
 
 **Thanks**
 
